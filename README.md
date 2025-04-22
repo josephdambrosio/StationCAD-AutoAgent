@@ -1,12 +1,12 @@
 
-# RainbowCAD-AutoAgent
+# StationCAD-AutoAgent
 
 
-RainbowCAD AutoAgent  is a chrome browser extension based off Ir8Coder's IAR-Injection project.  
+StationCAD AutoAgent is a chrome browser extension based off Ir8Coder's IAR-Injection project.  
 
-RainbowCAD AutoAgent is designed as a solution for Tyler Tech's NewWorld WebCAD to automatically log in users based on preset credentials. 
+StationCAD AutoAgent is designed as a solution for the StationCAD Watchdesk web app to automatically log in users based on preset credentials. 
 
-This is ideal for vehicle MDTs and other installed displays where keeping a system logged in after power failure or device reboot.
+This is ideal for vehicle MDTs and other installed displays where keeping a system logged in after power failure or device reboot is needed.
  
 
 
@@ -15,25 +15,17 @@ This is ideal for vehicle MDTs and other installed displays where keeping a syst
 
 Download the most recent .zip package from the deployments tab to right.
 
-Extract the ZIP archive to your downloads folder.
+Extract the ZIP archive to a folder of your choosing.
 
-Using the text editor of your choice, change the following files:
-
-/js/content.js
-    on line 17 & line 19
-    Change "CADHOSTNAMEHERE" to reflect the hostname or IP address of your instance of WebCAD
-
-/js/options.js
-    on line 62
-    Change "CADHOSTNAMEHERE" to reflect the hostname or IP address of your instance of WebCAD
-
-Open Chrome, and go to: chrome://extensions/
+Open Chrome, and go to: "chrome://extensions/"
 
 Select "load unpacked" from the top left, and naviage to the newly unzipped folder.
 
-You will be prompted for your WebCAD login credentials.
+You will be prompted for your StationCAD watchdesk login credentials.
 
 Select Save & Close.
+
+Watch the magic happen.
 
 Enjoy!
 

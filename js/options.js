@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	        setTimeout(function() {
 
 	          $("#message").slideToggle("slow");
-	          window.location.href = "https://CADHOSTNAMEHERE";
+	          window.location.href = "https://watchdesk.stationcad.com";
 
 	        }, 3000);
 

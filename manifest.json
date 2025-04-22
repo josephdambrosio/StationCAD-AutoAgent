@@ -6,9 +6,9 @@
    },
    "content_scripts": [ {
       "js": [ "js/content.js" ],
-      "matches": [ "*://nc911mspprd/*" ]
+      "matches": [ "*://watchdesk.stationcad.com/*" ]
    } ],
-   "description": "Chrome extension for NewWorld TylerCAD WebCAD clients.  This script will automatically login the user that is set in the options.",
+   "description": "Chrome extension for the StationCAD Watchdesk clients.  This script will automatically login the user that is set in the options.",
    "icons": {
       "128": "images/icon-128.png",
       "16": "images/icon-16.png",
@@ -16,7 +16,7 @@
    },
 
    "manifest_version": 2,
-   "name": "RainbowCAD AutoAgent",
+   "name": "StationCAD Watchdesk AutoAgent",
    "options_ui": {
       "chrome_style": true,
       "page": "options.html"

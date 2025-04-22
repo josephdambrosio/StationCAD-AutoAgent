@@ -1,21 +1,23 @@
-chrome.runtime.sendMessage({function: "getDefaults"}, function(response) {
+chrome.runtime.sendMessage({ function: "getDefaults" }, function (response) {
+    const username = response.username;
+    const password = response.password;
+    const url = window.location.href.toLowerCase();
 
-	var username = response.username;
-	var password = response.password;
+    if (url.includes("/account/login")) {
+        const userBox = document.querySelector('#Email');
+        const passBox = document.querySelector('#Password');
+        const form = document.querySelector('form');
 
-	if (window.location.href.toLowerCase().match("/newworld.cadview/account/login")) {
+        if (userBox && passBox && form) {
+            userBox.value = username;
+            passBox.value = password;
 
-		var userBox = document.querySelector('#Username');
-		var passBox = document.querySelector('#passwordField');
-
-
-		userBox.value = username;
-		passBox.value = password;
-
-		document.querySelector("#loginbtn").click();
-	}
-	if (window.location.href.toLowerCase().match('https://CADHOSTNAMEHERE/newworld.cadview/dashboard'))
-	{
-			window.location.href = 'https://CADHOSTNAMEHERE/newworld.cadview/current-calls';
-	}
+            // Trigger form submission after setting values
+            setTimeout(() => {
+                form.submit();
+            }, 500); // slight delay to ensure DOM updates
+        } else {
+            console.warn("Login form elements not found.");
+        }
+    }
 });
