@@ -1,0 +1,28 @@
+{
+   "author": "",
+   "background": {
+      "persistent": false,
+      "scripts": [ "js/background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "js/content.js" ],
+      "matches": [ "*://nc911mspprd/*" ]
+   } ],
+   "description": "Chrome extension for NewWorld TylerCAD WebCAD clients.  This script will automatically login the user that is set in the options.",
+   "icons": {
+      "128": "images/icon-128.png",
+      "16": "images/icon-16.png",
+      "48": "images/icon-48.png"
+   },
+
+   "manifest_version": 2,
+   "name": "RainbowCAD AutoAgent",
+   "options_ui": {
+      "chrome_style": true,
+      "page": "options.html"
+   },
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.01",
+   "web_accessible_resources": [ "js/content.js", "js/options.js" ]
+}
